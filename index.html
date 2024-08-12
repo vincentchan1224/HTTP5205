@@ -25,18 +25,23 @@
 
 
         <!-- Main Content -->
-        <main class="px-3">
+        <main class="">
             <!-- Title Section -->
-            <section class="text-center mb-3">
+            <div class="text-center mb-3 hero">
                 <h1>Get biased. Go local. Buy local.</h1>
-                <input type="text" class="form-control my-3" placeholder="Find products, food, services, and more...">
-                <div class="d-flex justify-content-between">
-                    <input type="text" class="form-control" placeholder="Enter your postal code">
-                    <select class="form-control ml-2">
-                        <option>Select neighbourhood</option>
-                    </select>
+                <input type="text" class="form-control" placeholder="Find products, food, services, and more...">
+                <div class="d-flex justify-content-center location">
+                    <div class="select-location">
+                        <img src="./img/location-icon.png" alt="location">
+                        <p class="m-0">Enter your postal code</p>
+                    </div>
+                    <div class="select-location">
+                        <img src="./img/store-icon.png" alt="location">
+                        <p class="m-0">Select neighborhood</p>
+
+                    </div>
                 </div>
-            </section>
+            </div>
 
             <!-- Businesses Section -->
             <section class="mb-4">
@@ -48,11 +53,15 @@
                 <div class="card mb-3">
                     <div class="row no-gutters align-items-center">
                         <div class="col-auto">
-                            <img src="temp.png" class="card-img-left" alt="Cafe Toronto">
+                            <img src="temp.png" class="card-img-left rounded" alt="Cafe Toronto">
                         </div>
                         <div class="col">
                             <div class="card-body">
                                 <h5 class="card-title">Cafe Toronto</h5>
+                                <div class="card-icons justify-content">
+                                    <img src="./img/share-icon.png" alt="share" class="icon">
+                                    <img src="./img/fav-icon.png" alt="favorite" class="icon">
+                                </div>
                                 <p class="card-text">Italian cafe<br>56 Danford Street • 11:00 AM - 6:00PM<br>Dine-in •
                                     Takeaway • Delivery</p>
                                 <p class="card-text"><small class="text-muted">Roncesvalles</small></p>
@@ -64,7 +73,7 @@
                 <div class="card mb-3">
                     <div class="row no-gutters align-items-center">
                         <div class="col-auto">
-                            <img src="temp.png" class="card-img-left" alt="Cafe Toronto">
+                            <img src="temp.png" class="card-img-left rounded" alt="Cafe Toronto">
                         </div>
                         <div class="col">
                             <div class="card-body">
