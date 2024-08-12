@@ -21,7 +21,6 @@ header {
 .icon {
     width: 24px;
     height: 24px;
-    margin: 0 10px;
 }
 
 h5 {
@@ -36,6 +35,13 @@ h5 {
 
 .row {
     margin: 10px;
+}
+
+.scroll-horizontal {
+    width: 100%;
+    display: inline-flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
 }
 
 section{
@@ -96,7 +102,8 @@ input[type="text"]{
     padding: 0 0 0 10px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
+    height: 128px;
 }
 
 .card-box {
@@ -104,15 +111,19 @@ input[type="text"]{
 }
 
 .card-title {
-    color: #333;
+    color: #264653;
+    font-weight: 600 !important;
     margin-bottom: 5px;
-    text-transform: uppercase;
     font-weight: 500;
 }
 
 .card-text {
     font-size: 0.95rem;
-    color: #666;
+    color: #000;
+}
+
+.card-text span {
+    color: #808080;
 }
 
 .card-img-left {
@@ -120,6 +131,55 @@ input[type="text"]{
     height: 128px;
     object-fit: cover;
     border-radius: 6px;
+}
+
+.card-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-info span {
+    font-size: 13px;
+}
+
+.card-city {
+    color: #E47C29;
+}
+
+.card-price {
+    color: #264653;
+}
+
+.moreInfo {
+    float: right;
+}
+
+.card-in {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.card-in span {
+    color: #808080;
+}
+
+.card-store {
+    display: flex;
+    align-items: center;
+}
+
+.box-inside {
+    height: 60px;
+    padding-left: 0; 
+    margin: 10px;
+}
+
+.box-img {
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 125px;
 }
 
 /* Footer Styles */
@@ -130,15 +190,12 @@ footer {
     text-align: center;
 }
 
-footer address, footer p {
-    margin-bottom: 10px;
-    font-size: 0.85rem;
+footer .social-icons {
+    padding-bottom: 10px;
 }
 
-footer .social-icons img {
-    width: 24px;
-    height: 24px;
-    margin: 0 5px;
+footer p {
+    font-size: 13px;
 }
 
 /* Sponsored Section Styles */
@@ -153,7 +210,7 @@ footer .social-icons img {
 
 .see-all {
     font-size: 0.9rem;
-    color: #007bff;
+    color: #52796F;
     text-decoration: none;
 }
 
@@ -165,10 +222,6 @@ footer .social-icons img {
 .mx-2 {
     margin-left: 0.5rem;
     margin-right: 0.5rem;
-}
-
-.text-muted {
-    color: #6c757d !important;
 }
 
 
@@ -212,4 +265,14 @@ footer .social-icons img {
     width: 90%;
     margin: 40px auto 20px;
     gap: 50px
+}
+
+/* footer links */
+.list-links a {
+    color: #fff ;
+    font-size: 13px;
+}
+
+.list-links {
+    padding: 20px 0;
 }
