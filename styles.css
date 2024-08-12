@@ -16,8 +16,6 @@ header {
 
 .logo {
     height: 40px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .icon {
@@ -26,10 +24,19 @@ header {
     margin: 0 10px;
 }
 
+h5 {
+    font-weight: 600;
+}
+
+
 /* Main Content Styles */
 /* main {
     padding: 20px;
 } */
+
+.row {
+    margin: 10px;
+}
 
 section{
     padding:20px;
@@ -86,16 +93,21 @@ input[type="text"]{
 }
 
 .card-body {
-    padding: 15px;
+    padding: 0 0 0 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
+.card-box {
+    display: flex;
+}
+
 .card-title {
-    font-size: 1.25rem;
     color: #333;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    font-weight: 500;
 }
 
 .card-text {
@@ -107,8 +119,7 @@ input[type="text"]{
     width: 128px;
     height: 128px;
     object-fit: cover;
-    border-radius: 10px 0 0 10px;
-    margin-left: 10px;
+    border-radius: 6px;
 }
 
 /* Footer Styles */
